@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Roulette Game</title>
+
+        <link rel="stylesheet" type="text/css" href="http://web.cse.ohio-state.edu/~lubinger.1/site-style.css">
+        <link rel="shortcut icon" type="image/x-icon" href="http://web.cse.ohio-state.edu/~lubinger.1/icon.png">
+
+        <style>
+            .main {
+                width:calc(100% - 1vw - 14px);
+                margin-left:calc(0.5vw + 7px);
+            }
+            .menu {
+                margin-bottom:7px;
+            }
+        </style>
+    </head>
+
+    <body style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; text-align: center;">
+            <h2>Phi Delta Theta Roulette Table</h2>
+            <br/>
+            <a href="javascript:void(0);" class="active" onclick="startSpin()">Spin the Wheel</a>
+            <br/>
+            <div id="spin">
+                Spin the Wheel
+            </div>
+
+            <script>
+                let choices = new Map([["0", "green"], ["00", "green"], ["1", "red"], ["2", "black"], ["3", "red"], ["4", "black"], ["5", "red"], ["6", "black"], ["7", "red"], ["8", "black"], ["9", "red"], ["10", "black"], ["11", "black"], ["12", "red"], ["13", "black"], ["14", "red"], ["15", "black"], ["16", "red"], ["17", "black"], ["18", "red"], ["19", "red"], ["20", "black"], ["21", "red"], ["22", "black"], ["23", "red"], ["24", "black"], ["25", "red"], ["26", "black"], ["27", "red"], ["28", "black"], ["29", "black"], ["30", "red"], ["31", "black"], ["32", "red"], ["33", "black"], ["34", "red"], ["35", "black"], ["36", "red"]]);
+                let keys = Array.from(choices.keys());
+                var previous = "0";
+                function startSpin() {
+                    var x = document.getElementById("spin");
+                    x.style.backgroundColor = "white";
+                    x.style.color = "black";
+                    x.innerHTML = "Spinning...";
+                    setTimeout(function() { spin(x); }, 1000);
+                }
+                function spin(x) {
+                    let pick = keys[Math.floor(Math.random()*keys.length)];
+                    if(previous == "15") {
+                        pick = "32";
+                    }
+                    x.style.backgroundColor = choices.get(pick);
+                    if(choices.get(pick) == "red") {
+                        x.style.color = "black";
+                    } else {
+                        x.style.color = "white";
+                    }
+                    x.innerHTML = pick;
+                    previous = pick;
+                }
+            </script>
+        </body>
+    </html>

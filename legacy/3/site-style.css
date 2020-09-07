@@ -1,0 +1,259 @@
+* {
+    box-sizing: border-box;
+}
+.returnToUpdatedVersion {
+    width:100%;
+    float:left;
+    text-align:center;  
+}
+.returnToUpdatedVersion a {
+    padding:8px;
+    background-color:black;
+    color:white;
+    display:block;
+}
+.menu {
+    float:left;
+    width:calc(100% - 1vw);
+    text-align:center;
+    margin-left:0.5vw;
+    margin-right:0.5vw;
+}
+.menu a {
+    float:left;
+    background-color:rgba(187, 0, 0, 1);
+    padding:8px;
+    margin-left:0.4vw;
+    margin-right:0.4vw;
+    margin-top:7px;
+    display:block;
+    width:calc(25% - 0.8vw); /*24.1%*/
+    color:rgb(255, 255, 255);
+    border: 2px solid rgba(102, 102, 102, 1);
+}
+.menu a:hover {
+    background-color:rgba(187, 0, 0, 0.7);
+    /*color:rgb(0, 0, 0);*/ /*CONSIDER UNCOMMENTING THIS IF IT LOOKS BETTER TO PEOPLE*/
+}
+.menu a.active {
+    background-color:rgba(102, 102, 102, 0.5);
+    border: 2px solid rgba(187, 0, 0, 1);
+    color:rgb(0, 0, 0);
+    /*text-shadow: -0.5px -0.5px 0 rgb(255, 255, 255), 0.5px -0.5px 0 rgb(255, 255, 255), -0.5px 0.5px 0 rgb(255, 255, 255), 0.5px 0.5px 0 rgb(255, 255, 255);*/
+}
+.menu a.active:hover {
+    background-color: rgba(102, 102, 102, 0.3);
+    /*color: rgba(187, 0, 0, 1);*/
+}
+.projMenu {
+    /*float:left;
+    width:calc(100% - 1vw);
+    text-align:center;
+    margin-left:0.5vw;
+    margin-right:0.5vw;*/
+    /*background-color:rgba(187, 0, 0, 1);*/
+    overflow:hidden;
+    position:relative;
+    text-align:center;
+    width:calc(100% - 1vw - 14px);
+    margin-left:calc(0.5vw + 7px);
+    margin-right:0.5vw;
+    margin-top:7px;
+}
+.projMenu a {
+    /*float:left;
+    background-color:rgba(187, 0, 0, 1);
+    padding:8px;
+    margin-left:0.4vw;
+    margin-right:0.4vw;
+    margin-top:7px;
+    display:block;
+    width:calc(25% - 0.8vw); /*24.1%*//*
+    color:rgb(255, 255, 255);
+    border: 2px solid rgba(102, 102, 102, 1);*/
+    display:block;
+    padding:8px;
+    /*background-color:rgba(102, 102, 102, .5);*/
+    background-color:rgba(187, 0, 0, 1);
+    color:rgb(255, 255, 255);
+    border-left:2px solid rgb(0, 0, 0);
+    border-right:2px solid rgb(0, 0, 0);
+    border-bottom:1px solid rgba(102, 102, 102, 1);
+}
+.projMenu #myLinks {
+    display:none;
+}
+.projMenu a.icon {
+    background:rgba(0, 0, 0, 1);
+    /*display:block;
+    position:absolute;
+    right:0;
+    top:0;*/
+    color:rgb(255, 255, 255);
+    font-size:12px;
+    text-decoration-line:none;
+    padding:4px;
+}
+.projMenu a.icon:hover {
+    background:rgba(102, 102, 102, 1);
+}
+.projMenu a:hover {
+    /*background-color:rgba(187, 0, 0, 0.7);*/
+    /*color:rgb(0, 0, 0);*/ /*CONSIDER UNCOMMENTING THIS IF IT LOOKS BETTER TO PEOPLE*/
+    background-color:rgba(187, 0, 0, 0.7);
+}
+.projMenu a.active {
+    /*background-color:rgba(102, 102, 102, 0.5);
+    border: 2px solid rgba(187, 0, 0, 1);
+    color:rgb(0, 0, 0);*/
+    /*text-shadow: -0.5px -0.5px 0 rgb(255, 255, 255), 0.5px -0.5px 0 rgb(255, 255, 255), -0.5px 0.5px 0 rgb(255, 255, 255), 0.5px 0.5px 0 rgb(255, 255, 255);*/
+    background-color:rgba(102, 102, 102, 0.5);
+    color:rgb(0, 0, 0);
+    border:2px solid rgb(0, 0, 0);
+}
+.projMenu a.active:hover {
+    background-color:rgba(102, 102, 102, 0.3);
+}
+/*.active:hover {
+    /*background-color: rgba(102, 102, 102, 0.3);*/
+    /*color: rgba(187, 0, 0, 1);*/
+    /*background-color:rgba(187, 0, 0, 0.7);
+}*/
+.main {
+    float:left;
+    /*width:83%;*/
+    width:calc(85% - 1vw - 21px);
+    padding:7px 20px;
+    background-color:rgba(102, 102, 102, 0.1);
+    /*margin-left: 7px;*/
+    margin-top: 7px;
+    margin-bottom: 7px;
+}
+.rightDesktop {
+    background-color:rgba(102, 102, 102, 0.1);
+    float:left;
+    width:15%;
+    height:calc(width * 1.5);
+    padding:5px;
+    margin-top:7px;
+    margin-left:calc(7px + .5vw);
+    margin-right:7px;
+    margin-bottom:7px;
+    text-align:center;
+}
+.rightMobile {
+    background-color:rgba(102, 102, 102, 0.1);
+    float:left;
+    width:50%;
+    height:calc(width * 1.5);
+    padding:5px;
+    margin-top:7px;
+    margin-left:25%;
+    margin-bottom:7px;
+    text-align:center;
+    display:none;
+}
+.lineLeft {
+    position:absolute;
+    float:left;
+    border-left: 0.5vw solid rgba(102, 102, 102, .5);
+    /*height:100%;*/
+    /*min-height: 500px;
+    margin-bottom:0px;
+    margin-top:0px;*/
+    margin-right:7px;
+    height:100%;
+    top:0;
+    left:0;
+}
+.lineRight {
+    position:absolute;
+    float:right;
+    border-left: 0.5vw solid rgba(102, 102, 102, .5);
+    /*height:33.9vw;
+    min-height: 450px;*/
+    /*height: 500px;*/
+    margin-left:7px;
+    height:100%;
+    top:0;
+    right:0;
+}
+.header {
+    background: rgb(102,102,102); /* Old browsers */
+    background: -moz-linear-gradient(left, rgba(102,102,102,0.5) 25%, rgba(187,0,0,1) 50%, rgba(102,102,102,0.5) 75%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, rgba(102,102,102,0.5) 25%,rgba(187,0,0,1) 50%,rgba(102,102,102,0.5) 75%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right,rgba(102,102,102,0.5) 25%,rgba(187,0,0,1) 50%,rgba(102,102,102,0.5) 75%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#666666', endColorstr='#666666',GradientType=1 ); /* IE6-9 */
+    padding:15px;
+    text-align:center;
+}
+.footer {
+    background-color:rgba(102, 102, 102, 0.5);
+    text-align:center;
+    padding:10px;
+    margin-top:0px;
+}
+.footer a {
+    color:rgba(187, 0, 0, 1);
+}
+.encloser {
+    overflow:hidden;
+    position:relative;
+    width:100%;
+}
+.gallery {
+    margin: 5px;
+    border: 1px solid rgba(102, 102, 102, .5);
+    float: left;
+    width: 300px;
+}
+.gallery:hover {
+    border: 1px solid rgba(102, 102, 102, 1);
+}
+.gallery img {
+    width: 100%;
+    height: auto;
+}
+.desc {
+    padding: 15px;
+    text-align: center;
+}
+                
+@media only screen and (max-width:730px) {
+    /* For mobile phones: */
+    .main {
+        width:100%;
+    }
+    .menu {
+        width:100%;
+        margin-left:0;
+        margin-right:0;
+    }
+    .projMenu {
+        width:100%;
+        margin-left:0;
+        margin-right:0;
+    }
+    .rightDesktop {
+        display:none;
+    }
+    .rightMobile {
+        display:inline;
+    }
+    .lineLeft {
+        display:none;
+    }
+    .lineRight {
+        display:none;
+    }
+    .header {
+        background: rgb(102,102,102); /* Old browsers */
+        background: -moz-linear-gradient(top, rgba(102,102,102,0.5) 0%, rgba(187,0,0,1) 50%, rgba(102,102,102,0.5) 100%); /* FF3.6-15 */
+        background: -webkit-linear-gradient(top, rgba(102,102,102,0.5) 0%,rgba(187,0,0,1) 50%,rgba(102,102,102,0.5) 100%); /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(to bottom,rgba(102,102,102,0.5) 0%,rgba(187,0,0,1) 50%,rgba(102,102,102,0.5) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#666666', endColorstr='#666666',GradientType=0 ); /* IE6-9 */
+    }
+    .menu a {
+        font-size: 12px;
+    }
+}

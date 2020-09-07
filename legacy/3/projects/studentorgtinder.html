@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="Description" content="Andrew Lubinger - Computer Science and
+            Engineering student at The Ohio State University - Student Organization Tinder-Like App Hack Ohi/o 2018 Hackathon Project">
+        <title>Student Organization Tinder Project - Andrew Lubinger</title>
+        <link rel="stylesheet" type="text/css" href="http://web.cse.ohio-state.edu/~lubinger.1/legacy/3/site-style.css">
+
+        <style>
+            .main {
+                width:calc(100% - 1vw - 14px);
+                margin-left:calc(0.5vw + 7px);
+            }
+            .menu {
+                margin-bottom:7px;
+            }
+        </style>
+    </head>
+
+    <body style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif">
+        <div class="returnToUpdatedVersion">
+            <a href="http://web.cse.ohio-state.edu/~lubinger.1">Return to Newest Version</a>
+        </div>
+        <div class="header">
+            <h1>Andrew Lubinger<br><s>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</s><br>Student Organization Tinder</h1>
+        </div>
+
+        <div class="encloser">
+        <div class="lineLeft"></div>
+        <div class="lineRight"></div>
+        <div style="overflow:auto">
+            <div class="menu">
+                <a href="http://web.cse.ohio-state.edu/~lubinger.1/legacy/3/index.html">Home</a>
+                <a href="http://web.cse.ohio-state.edu/~lubinger.1/legacy/3/projects.html">My Projects</a>
+                <a href="http://web.cse.ohio-state.edu/~lubinger.1/Andrew_Lubinger_Resume.pdf">My Resume</a>
+                <a href="http://web.cse.ohio-state.edu/~lubinger.1/legacy/3/aboutme.html">About Me</a>
+            </div>
+
+            <div class="projMenu">
+                <a href="http://web.cse.ohio-state.edu/~lubinger.1/legacy/3/projects/studentorgtinder.html" class="active">Student Organization Tinder</a>
+                <div id="myLinks">
+                    <a href="http://web.cse.ohio-state.edu/~lubinger.1/legacy/3/projects/hyland.html">Hyland Software - Senior Project</a>
+                    <a href="http://web.cse.ohio-state.edu/~lubinger.1/legacy/3/projects/writinganalytics.html">Writing Analytics Java Program</a>
+                    <a href="http://web.cse.ohio-state.edu/~lubinger.1/legacy/3/projects/energyswitch.html">Energy Switch App</a>
+                    <a href="http://web.cse.ohio-state.edu/~lubinger.1/legacy/3/projects/personalapp.html">Personalized iPhone App</a>
+                    <a href="http://web.cse.ohio-state.edu/~lubinger.1/legacy/3/projects/engineeringgame.html">Engineering Game</a>
+                    <a href="http://web.cse.ohio-state.edu/~lubinger.1/legacy/3/projects/engineeringaev.html">Engineering AEV</a>
+                    <a href="http://web.cse.ohio-state.edu/~lubinger.1/legacy/3/projects/softwareclass.html">Software Class Projects</a>
+                    <a href="http://web.cse.ohio-state.edu/~lubinger.1/legacy/3/projects/personalwebsite.html">Personal Website</a>
+                </div>
+                <a href="javascript:void(0);" class="icon" onclick="dropdownMenu(this)">
+                    <s>&nbsp;&nbsp;&nbsp;&nbsp;</s>Expand<s>&nbsp;&nbsp;&nbsp;&nbsp;</s>
+                </a>
+            </div>
+
+            <div class="main">
+            <p>Hack Ohi/o 2018 Project:
+            <br><br>Goal: Increase awareness/involvement in on-campus student organizations.
+            <br><br>Developed initially in a team of three people in a 24 hour time period.
+            <br><br>Features:
+            <br> - When logging in, the user must have an email address ending in "@osu.edu"
+            <br> - Previously liked organizations are displayed on log in page
+            <br> - Swipe left or right to skip or like an organization
+            <br> - Swipe left or right to skip or like events from organizations that were liked
+            <br> - Add liked events to the calendar
+            <br> - Send a local notification on the day of a liked event
+            <br> - Display locations of liked events on an interactive map
+            <br> - Any new organizations or events that are added to the online files, are displayed in the app making it easily updateable
+            <br> - Request new organizations or events be added via google forms. These are then added manually to ensure no spam is added instantly online and to all users
+            <br><br>Methods:
+            <br> - A single view controller displays the log in screen
+            <br> - A tab bar controller controls all three of the other pages
+            <br> - One tab for swiping on organizations
+            <br> - One tab for swiping on events
+            <br> - One tab to display the interactive map of events
+            <br> - Access current data from files in the directory of <a href="http://web.cse.ohio-state.edu/~lubinger.1/hackohio2018/"> http://web.cse.ohio-state.edu/~lubinger.1/hackohio2018/</a>
+            <br> - Save which organizations and events have already been liked from the device by using User Defaults
+            <br> - Structures to define organizations and events
+            <br><br>Future Improvements:
+            <br> - Improve performance and remove redundancies
+            <br> - Files for organizations to view the names and emails of students who liked their organization or will attend their event
+            <br> - Event check in
+            <br> - Improve appearance and add animations
+            <br> - Save user data based on log in information (currently local to device) 
+            <br> - Button alternatives to swiping
+            </p>
+
+                <div class="gallery">
+                    <img src="photos/sotlayout.png" alt="Student Organization Tinder - View Controller Layout">
+                    <div class="desc">View Controller Layout</div>
+                </div>
+                <div class="gallery">
+                    <img src="photos/sotorgs.png" alt="Student Organization Tinder - Organizations">
+                    <div class="desc">Organizations Tab</div>
+                </div>
+                <div class="gallery">
+                    <img src="photos/soteventscal.png" alt="Student Organization Tinder - Events - Calendar">
+                    <div class="desc">Events Tab - Creating a calendar event</div>
+                </div>
+                <div class="gallery">
+                    <img src="photos/soteventsnotif.png" alt="Student Organization Tinder - Events - Notification">
+                    <div class="desc">Events Tab - Creating a local notification for an event</div>
+                </div>
+                <div class="gallery">
+                    <img src="photos/sotmap.png" alt="Student Organization Tinder - Map">
+                    <div class="desc">Map of liked events</div>
+                </div>
+            </div>
+
+        </div>
+        </div>
+            <div class="footer">Contact Information: Email: <a href="mailto:amlubinger@gmail.com">amlubinger@gmail.com</a>
+                or <a href="mailto:lubinger.1@osu.edu">lubinger.1@osu.edu</a>
+            </div>
+            <script>
+                function dropdownMenu(y) {
+                  var x = document.getElementById("myLinks");
+                  if (x.style.display === "block") {
+                    x.style.display = "none";
+                    y.innerHTML = "<s>&nbsp;&nbsp;&nbsp;&nbsp;</s>Expand<s>&nbsp;&nbsp;&nbsp;&nbsp;</s>";
+                  } else {
+                    x.style.display = "block";
+                    y.innerHTML = "<s>&nbsp;&nbsp;&nbsp;&nbsp;</s>Collapse<s>&nbsp;&nbsp;&nbsp;&nbsp;</s>";
+                  }
+                }
+            </script>
+        </body>
+    </html>

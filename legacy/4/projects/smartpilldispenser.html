@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="Description" content="Andrew Lubinger - Computer Science and
+            Engineering student at The Ohio State University - Smart Pill Dispenser Hack OHI/O 2019 project
+            page">
+        <title>Smart Pill Dispenser - Andrew Lubinger</title>
+
+        <link rel="stylesheet" type="text/css" href="../site-style.css">
+        <link rel="shortcut icon" type="image/x-icon" href="http://web.cse.ohio-state.edu/~lubinger.1/icon.png">
+        <script type="text/javascript" src="dropdownMenu.js"></script>
+
+        <style>
+            .main {
+                width:calc(100% - 1vw - 14px);
+                margin-left:calc(0.5vw + 7px);
+            }
+            .menu {
+                margin-bottom:7px;
+            }
+            .gallery img {
+                image-orientation: from-image;
+            }
+        </style>
+    </head>
+
+    <body style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif">
+        <div class="header">
+            <h1>Andrew Lubinger<br><s>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</s><br>Smart Pill Dispenser</h1>
+        </div>
+
+        <div class="encloser">
+        <div class="lineLeft"></div>
+        <div class="lineRight"></div>
+        <div style="overflow:auto">
+            <div class="menu">
+                <a href="http://web.cse.ohio-state.edu/~lubinger.1">Home</a>
+                <a href="http://web.cse.ohio-state.edu/~lubinger.1/projects.html">My Projects</a>
+                <a href="http://web.cse.ohio-state.edu/~lubinger.1/Andrew_Lubinger_Resume.pdf">My Resume</a>
+                <a href="http://web.cse.ohio-state.edu/~lubinger.1/aboutme.html">About Me</a>
+            </div>
+
+            <div class="projMenu">
+                <a href="http://web.cse.ohio-state.edu/~lubinger.1/projects/smartpilldispenser.html" class="active">Smart Pill Dispenser</a>
+                <div id="myLinks">
+                    <a href="http://web.cse.ohio-state.edu/~lubinger.1/projects/motivatingreminders.html">Motivating Reminders</a>
+                    <a href="http://web.cse.ohio-state.edu/~lubinger.1/projects/studentorgtinder.html">Student Organization Tinder</a>
+                    <a href="http://web.cse.ohio-state.edu/~lubinger.1/projects/hyland.html">Hyland Software - Senior Project</a>
+                    <a href="http://web.cse.ohio-state.edu/~lubinger.1/projects/writinganalytics.html">Writing Analytics Java Program</a>
+                    <a href="http://web.cse.ohio-state.edu/~lubinger.1/projects/energyswitch.html">Energy Switch App</a>
+                    <a href="http://web.cse.ohio-state.edu/~lubinger.1/projects/personalapp.html">Personalized iPhone App</a>
+                    <a href="http://web.cse.ohio-state.edu/~lubinger.1/projects/engineeringgame.html">Engineering Game</a>
+                    <a href="http://web.cse.ohio-state.edu/~lubinger.1/projects/engineeringaev.html">Engineering AEV</a>
+                    <a href="http://web.cse.ohio-state.edu/~lubinger.1/projects/softwareclass.html">Software Class Projects</a>
+                    <a href="http://web.cse.ohio-state.edu/~lubinger.1/projects/personalwebsite.html">Personal Website</a>
+                </div>
+                <a href="javascript:void(0);" class="icon" onclick="dropdownMenu(this)">
+                    <s>&nbsp;&nbsp;&nbsp;&nbsp;</s>Expand<s>&nbsp;&nbsp;&nbsp;&nbsp;</s>
+                </a>
+            </div>
+
+            <div class="main">
+                <h5>Overview:</h5>
+                <p>
+                    Many people struggle with remembering to take their medications. We wanted to leverage smart technology to help people remember to take their medicine!
+                    <br/><br/>
+                    At <a href="https://hack.osu.edu/2019/">Hack OHI/O 2019</a>, we created a smart pill dispenser that reminds people to take their medications. Patients or their caretaker can specify a schedule for each of their medications. The dispenser keeps track of how many pills are left, what times the medication is dispensed, and if the pills are actually taken.
+                    <br/><br/>
+                    We built a mobile-friendly web app where the medication schedule is entered so the pills are dispensed at the correct time. The medication history is visible, showing if pills were taken, and if so, when they were taken. Text notifications are sent out when the pill is dispensed, if the pill is still not taken after a specified amount of time, and when a refill is needed.
+                    <br/><br/>
+                    A physical prototype was constructed to show our idea in action. Hardware components include an Arduino, NodeMCU, servo motors, a display, and an ultrasonic sensor. The dispenser communicated with the web app over Wi-Fi.
+                    <br/><br/>
+                    Our project got third place overall at <a href="https://hack.osu.edu/2019/">Hack OHI/O 2019</a>, Ohio State's flagship hackathon with over 800 attendees.
+                    <br/><br/>
+                    Web app development was done with Ruby on Rails and JavaScript. Arduino development was done with C and C++.
+                </p>
+                <br/>
+                <h5>Teammates:</h5>
+                <p>
+                    <a href="https://www.linkedin.com/in/jivoin/">Andrew Jivoin</a><br/>
+                    <a href="https://www.linkedin.com/in/jonzimm/">Jon Zimmerman</a><br/>
+                    <a href="https://www.linkedin.com/in/alexander-shearer/">Alexander Shearer</a>
+                </p>
+                <br/>
+                <h5>Photos and Videos:</h5>
+                <div class="gallery gallery-i">
+                    <img src="photos/smartpilldispenser_complete.jpg" alt="Smart Pill Dispenser Complete">
+                    <div class="desc">Finished Smart Pill Dispenser with physical device with "next medication at" display centered, presentation to the right, web application user interface to the left, and the server running in the back left.</div>
+                </div>
+                <div class="gallery gallery-i">
+                    <img src="photos/smartpilldispenser_back.jpg" alt="Smart Pill Dispenser Under the Hood">
+                    <div class="desc">Back of physical device with Arduino, NodeMCU, ultrasonic sensor, and pill storage system all in view.</div>
+                </div>
+                <div class="gallery gallery-v">
+                    <iframe src="https://www.youtube.com/embed/Dytg9O8Kf9Y" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <div class="desc">Courtesy of teammate <a href="https://jivoin.com/hack-ohio-2019">Andrew Jivoin</a>.</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        <div class="footer">Contact Information: Email: <a href="mailto:amlubinger@gmail.com">amlubinger@gmail.com</a>
+            or <a href="mailto:lubinger.1@osu.edu">lubinger.1@osu.edu</a>
+        </div>
+    </body>
+</html>

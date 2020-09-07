@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="Description" content="Andrew Lubinger - Computer Science and
+            Engineering student at The Ohio State University - Website energy switch app project
+            page">
+        <title>Energy Switch Project - Andrew Lubinger</title>
+
+        <link rel="stylesheet" type="text/css" href="http://web.cse.ohio-state.edu/~lubinger.1/legacy/3/site-style.css">
+
+        <style>
+            .main {
+                width:calc(100% - 1vw - 14px);
+                margin-left:calc(0.5vw + 7px);
+            }
+            .menu {
+                margin-bottom:7px;
+            }
+        </style>
+    </head>
+
+    <body style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif">
+        <div class="returnToUpdatedVersion">
+            <a href="http://web.cse.ohio-state.edu/~lubinger.1">Return to Newest Version</a>
+        </div>
+            <div class="header">
+                <h1>Andrew Lubinger<br><s>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</s><br>Energy Switch App</h1>
+            </div>
+    
+            <div class="encloser">
+            <div class="lineLeft"></div>
+            <div class="lineRight"></div>
+            <div style="overflow:auto">
+                <div class="menu">
+                    <a href="http://web.cse.ohio-state.edu/~lubinger.1/legacy/3/index.html">Home</a>
+                    <a href="http://web.cse.ohio-state.edu/~lubinger.1/legacy/3/projects.html">My Projects</a>
+                    <a href="http://web.cse.ohio-state.edu/~lubinger.1/Andrew_Lubinger_Resume.pdf">My Resume</a>
+                    <a href="http://web.cse.ohio-state.edu/~lubinger.1/legacy/3/aboutme.html">About Me</a>
+                </div>
+    
+                <div class="projMenu">
+                    <a href="http://web.cse.ohio-state.edu/~lubinger.1/legacy/3/projects/energyswitch.html" class="active">Engery Switch App</a>
+                    <div id="myLinks">
+                        <a href="http://web.cse.ohio-state.edu/~lubinger.1/legacy/3/projects/studentorgtinder.html">Student Organization Tinder</a>
+                        <a href="http://web.cse.ohio-state.edu/~lubinger.1/legacy/3/projects/hyland.html">Hyland Software - Senior Project</a>
+                        <a href="http://web.cse.ohio-state.edu/~lubinger.1/legacy/3/projects/writinganalytics.html">Writing Analytics Java Program</a>
+                        <a href="http://web.cse.ohio-state.edu/~lubinger.1/legacy/3/projects/personalapp.html">Personalized iPhone App</a>
+                        <a href="http://web.cse.ohio-state.edu/~lubinger.1/legacy/3/projects/engineeringgame.html">Engineering Game</a>
+                        <a href="http://web.cse.ohio-state.edu/~lubinger.1/legacy/3/projects/engineeringaev.html">Engineering AEV</a>
+                        <a href="http://web.cse.ohio-state.edu/~lubinger.1/legacy/3/projects/softwareclass.html">Software Class Projects</a>
+                        <a href="http://web.cse.ohio-state.edu/~lubinger.1/legacy/3/projects/personalwebsite.html">Personal Website</a>
+                    </div>
+                    <a href="javascript:void(0);" class="icon" onclick="dropdownMenu(this)">
+                        <s>&nbsp;&nbsp;&nbsp;&nbsp;</s>Expand<s>&nbsp;&nbsp;&nbsp;&nbsp;</s>
+                    </a>
+                </div>
+
+                <div class="main">
+                    <p>Developed an iOS app written in Swift designed to help users
+                    decide whether to
+                    switch to solar power or wind power at their business or house.
+                    Based on the user's geographical location and property size, the
+                    program would determine obtainable wind turbine energy and solar
+                    panel energy. After deciding which would be more effective for the
+                    user, the program outputs the pros and cons of each including short
+                    term costs and long term savings. Project was awarded Second Place, Intel
+                    Excellence in Computer Science Award, and American Society of Heating, Refrigeration and Air Conditioning Engineers Award.
+                    </p>
+
+                    <div class="gallery">
+                        <img src="photos/energyswitchhome.png" alt="Energy Switch Home">
+                        <div class="desc">Energy Switch - Home Screen</div>
+                    </div>
+                    <div class="gallery">
+                        <img src="photos/energyswitchsun.png" alt="Energy Switch Sun">
+                        <div class="desc">Energy Switch - Solar Screen</div>
+                    </div>
+                    <div class="gallery">
+                        <img src="photos/energyswitchwind.png" alt="Energy Switch Wind">
+                        <div class="desc">Energy Switch - Turbine Screen</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+            <div class="footer">Contact Information: Email: <a href="mailto:amlubinger@gmail.com">amlubinger@gmail.com</a>
+                or <a href="mailto:lubinger.1@osu.edu">lubinger.1@osu.edu</a>
+            </div>
+            <script>
+                function dropdownMenu(y) {
+                  var x = document.getElementById("myLinks");
+                  if (x.style.display === "block") {
+                    x.style.display = "none";
+                    y.innerHTML = "<s>&nbsp;&nbsp;&nbsp;&nbsp;</s>Expand<s>&nbsp;&nbsp;&nbsp;&nbsp;</s>";
+                  } else {
+                    x.style.display = "block";
+                    y.innerHTML = "<s>&nbsp;&nbsp;&nbsp;&nbsp;</s>Collapse<s>&nbsp;&nbsp;&nbsp;&nbsp;</s>";
+                  }
+                }
+            </script>
+        </body>
+    </html>
