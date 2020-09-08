@@ -245,7 +245,7 @@
         display:none;
     }
     .header {
-        background: rgb(102,102,102);
+        background: rgb(102,102,102, 0.5);
     }
     .menu a {
         font-size: 12px;
