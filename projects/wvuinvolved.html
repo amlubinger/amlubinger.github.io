@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="Description" content="Andrew Lubinger - Computer Science and
+            Engineering student at The Ohio State University - WVU Involved">
+        <title>WVU Involved - Andrew Lubinger</title>
+
+        <link rel="stylesheet" type="text/css" href="../site-style.css">
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+        <link rel="manifest" href="/site.webmanifest">
+        <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#bb0000">
+        <meta name="msapplication-TileColor" content="#bb0000">
+        <meta name="theme-color" content="#ffffff">
+        <script type="text/javascript" src="dropdownMenu.js"></script>
+
+        <style>
+            .main {
+                width:calc(100% - 1vw - 14px);
+                margin-left:calc(0.5vw + 7px);
+            }
+            .menu {
+                margin-bottom:7px;
+            }
+        </style>
+    </head>
+
+    <body style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif">
+            <div class="header">
+                <h1>Andrew Lubinger<br><s>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</s><br>WVU Involved</h1>
+            </div>
+    
+            <div class="encloser">
+            <div class="lineLeft"></div>
+            <div class="lineRight"></div>
+            <div style="overflow:auto">
+                <div class="menu">
+                    <a href="../index.html">Home</a>
+                    <a href="../projects.html">My Projects</a>
+                    <a href="../Andrew_Lubinger_Resume.pdf">My Resume</a>
+                    <a href="../aboutme.html">About Me</a>
+                </div>
+    
+                <div class="projMenu">
+                    <a href="wvuinvolved.html" class="active">WVU Involved</a>
+                    <div id="myLinks">
+                        <a href="beatxichigan.html">Beat ❌ichigan Keyboard</a>
+                        <a href="motivatingreminders.html">Motivating Reminders</a>
+                        <a href="smartpilldispenser.html">Smart Pill Dispenser</a>
+                        <a href="studentorgtinder.html">Student Organization Tinder</a>
+                        <a href="hyland.html">Hyland Software - Senior Project</a>
+                        <a href="writinganalytics.html">Writing Analytics Java Program</a>
+                        <a href="energyswitch.html">Energy Switch App</a>
+                        <a href="personalapp.html">Personalized iPhone App</a>
+                        <a href="engineeringgame.html">Engineering Game</a>
+                        <a href="engineeringaev.html">Engineering AEV</a>
+                        <a href="softwareclass.html">Software Class Projects</a>
+                        <a href="personalwebsite.html">Personal Website</a>
+                    </div>
+                    <a href="javascript:void(0);" class="icon" onclick="dropdownMenu(this)">
+                        <s>&nbsp;&nbsp;&nbsp;&nbsp;</s>Expand<s>&nbsp;&nbsp;&nbsp;&nbsp;</s>
+                    </a>
+                </div>
+
+                <div class="main">
+
+                    <p>
+                        WVU Involved is a mobile application for Apple (iOS/iPadOS) and Android mobile devices designed to increase student involvement in organizations and events
+                        at <a href="https://www.wvu.edu/">West Virginia University</a>, especially during the COVID-19 pandemic, by presenting organizations and
+                        envents in a simple and familiar swiping format.
+                        <br/><br/>
+                        Development began after I was contacted by people involved in student life at WVU regarding <a href="studentorgtinder.html">one of my 
+                        hackathon projects</a>. They needed a solution during the pandemic to allow students to still find and join campus organizations while 
+                        a large fair would not be possible. I was tasked with the challenge of building a full version of that hackathon project for both Apple and 
+                        Android mobile devices. One of the main areas I knew I could improve on from the hackathon project was the user interface. The hackathon project 
+                        was completed within a 24 hour time period, so it was very rushed. With a couple months of development time, I was able to build a much more 
+                        polished and thought-out app, including a clean light mode and a nice dark mode.
+                        <br/><br/><br/>
+                        The app features a stack of cards with an organization displayed on each one, including the name, description, some photos, and a link to open 
+                        their official page on WVU's website. To follow an organization, the user swipes the card to the right and a green checkmark overlay will appear as 
+                        they are swiping. To skip the organization, the user swipes to the left and sees a red X overlay. The organizations can be filtered by category 
+                        by tapping on the filters icon, selecting one or more categories, and tapping apply or the filters icon again. The user can also tap on the following 
+                        icon to review their choices for whether they followed or skipped each organization and can choose again by tapping on the organization name and the 
+                        card will appear just as before.
+                        <br/><br/>
+                        Once the user is following some organizations, the events tab will be populated with a stack of cards for upcoming events of the followed 
+                        organizations in the same manner as on the organizations tab. Each card features the event name, corresponding organization, date/time, location, 
+                        description, a photo, and a link to learn more. Using the same mechanic, the user can swipe left or right for each card to attend or skip the event. 
+                        Events can be filtered by organization, and can also be reviewed.
+                        <br/><br/>
+                        Once the user has decided to attend some events, they will appear on the map tab. If an event is in person, a pin will be placed at the event's 
+                        location on the map. When the pin is tapped, event details are visible and directions can be viewed. If an event will take place in an online 
+                        format, the "Online" button in the top right corner of the map will show how many online events there are. Tapping that button will open a detailed 
+                        list including the online events.
+                        <br/><br/><br/>
+                        Development of WVU Involved introduced me to some new technologies. This was my first work developing for Android. Android development was 
+                        done natively using fragments and Kotlin in Android Studio. I was able to learn Android frameworks quickly and effectively, and it was very 
+                        exciting to expand my mobile development knowledge. iOS/iPadOS development was done natively using Swift and SwiftUI in Xcode, targeted for 
+                        iOS 13. This was my first experience with SwiftUI and I very much enjoyed it. I am looking forward to what a couple more years of development 
+                        brings to SwiftUI as I'm already looking forward to using the new iOS 14 items like lazy stacks.
+                        <br/><br/>
+                        While the app is not live as WVU ended up without the personnel support to launch the app with live data at the time, I am very proud of my work 
+                        and am glad to display some in-app screenshots below.
+                        <br/><br/><br/>
+                    </p>
+                    <div class="gallery gallery-i">
+                        <img src="photos/WVU_i_do.png" alt="WVU Involved iOS Dark Mode Organizations Tab">
+                        <div class="desc">The iOS organizations tab in dark mode, featuring the card view of an organization and the filters and following buttons at the top.</div>
+                    </div>
+                    <div class="gallery gallery-i">
+                        <img src="photos/WVU_i_lo.png" alt="WVU Involved iOS Light Mode Organizations Tab">
+                        <div class="desc">The iOS organizations tab in light mode, featuring the card view of an organization but scrolled down a bit.</div>
+                    </div>
+                    <div class="gallery gallery-i">
+                        <img src="photos/WVU_i_de.png" alt="WVU Involved iOS Dark Mode Events Tab">
+                        <div class="desc">The iOS events tab, featuring the card view of an event.</div>
+                    </div>
+                    <div class="gallery gallery-i">
+                        <img src="photos/WVU_i_lf.png" alt="WVU Involved iOS Light Mode Events Filters">
+                        <div class="desc">The iOS events tab after tapping on the filters button, which provides the ability to filter the events by organization.</div>
+                    </div>
+                    <div class="gallery gallery-i">
+                        <img src="photos/WVU_i_dm.png" alt="WVU Involved iOS Dark Mode Map Tab">
+                        <div class="desc">The iOS map tab, featuring an in person event. Tapping on the left side opens directions in the maps app, and tapping on the right opens the event details in browser</div>
+                    </div>
+                    <div class="gallery gallery-i">
+                        <img src="photos/WVU_i_ln.png" alt="WVU Involved iOS Light Mode Online Events">
+                        <div class="desc">The iOS online events, featuring a list of online events with details after tapping on the "Online" button on the map.</div>
+                    </div>
+                    <div class="gallery gallery-i">
+                        <img src="photos/WVU_a_do.png" alt="WVU Involved Android Dark Mode Organizations Tab">
+                        <div class="desc">The Android organizations tab in dark mode, featuring the card view of an organization.</div>
+                    </div>
+                    <div class="gallery gallery-i">
+                        <img src="photos/WVU_a_lo.png" alt="WVU Involved Android Light Mode Organizations Tab">
+                        <div class="desc">The Android organizations tab in light mode, featuring the card view of an organization but scrolled down a bit.</div>
+                    </div>
+                    <div class="gallery gallery-i">
+                        <img src="photos/WVU_a_dm.png" alt="WVU Involved Android Dark Mode Map Tab">
+                        <div class="desc">The Android map tab, featuring an in person event. Tapping on the popup opens directions to the locations in Google Maps</div>
+                    </div>
+                    <div class="gallery gallery-i">
+                        <img src="photos/WVU_a_ln.png" alt="WVU Involved Android Dark Mode Online Events">
+                        <div class="desc">The Android online events, featuring a list of online events with details after tapping on the "Online" button on the map.</div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+
+            <div class="footer">Contact me at <a href="mailto:amlubinger@gmail.com">amlubinger@gmail.com</a>
+            </div>
+        </body>
+    </html>
