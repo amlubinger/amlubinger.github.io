@@ -1,5 +1,4 @@
-# amlubinger.github.io
-# andrewlubinger.dev
+# amlubinger.github.io | andrewlubinger.dev
 My personal website.
 
 Static website hosting my resume and projects.
