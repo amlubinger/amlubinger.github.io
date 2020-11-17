@@ -3,9 +3,9 @@
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="Description" content="Andrew Lubinger - Computer Science and
-            Engineering student at The Ohio State University - Smart Pill Dispenser Hack OHI/O 2019 project
+            Engineering student at The Ohio State University - Pole Request Hack OHI/O 2020 project
             page">
-        <title>Smart Pill Dispenser - Andrew Lubinger</title>
+        <title>Pole Request - Andrew Lubinger</title>
 
         <link rel="stylesheet" type="text/css" href="../site-style.css">
         <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
@@ -33,7 +33,7 @@
 
     <body style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif">
         <div class="header">
-            <h1>Andrew Lubinger<br><s>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</s><br>Smart Pill Dispenser</h1>
+            <h1>Andrew Lubinger<br><s>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</s><br>Pole Request</h1>
         </div>
 
         <div class="encloser">
@@ -48,9 +48,8 @@
             </div>
 
             <div class="projMenu">
-                <a href="smartpilldispenser.html" class="active">Smart Pill Dispenser</a>
+                <a href="polerequest.html" class="active">Pole Request</a>
                 <div id="myLinks">
-                    <a href="projects/polerequest.html">Pole Request</a>
                     <a href="wvuinvolved.html">WVU Involved</a>
                     <a href="motivatingreminders.html">Motivating Reminders</a>
                     <a href="beatxichigan.html">Beat ❌ichigan Keyboard</a>
@@ -72,38 +71,28 @@
             <div class="main">
                 <h5>Overview:</h5>
                 <p>
-                    Many people struggle with remembering to take their medications. We wanted to leverage smart technology to help people remember to take their medicine!
+                    At <a href="https://hack.osu.edu/2020/">Hack OHI/O 2020</a>, Ohio State's flagship hackathon with over 800 attendees, and the first fully virtual version,
+                    my team and I accepted a challenge presented by event sponsor AEP by utilizing data and an API that they provided to present meaningful and helpful data. 
+                    <br/>
+                    We overcame challenges setting up technology as well as untimely power outages and plenty of homework due to be submitted during the event.
                     <br/><br/>
-                    At <a href="https://hack.osu.edu/2019/">Hack OHI/O 2019</a>, we created a smart pill dispenser that reminds people to take their medications. Patients or their caretaker can specify a schedule for each of their medications. The dispenser keeps track of how many pills are left, what times the medication is dispensed, and if the pills are actually taken.
+                    The result was a Ruby on Rails web app utilizing Bootstrap, javascript, and Apple's MapKit JS.
                     <br/><br/>
-                    We built a mobile-friendly web app where the medication schedule is entered so the pills are dispensed at the correct time. The medication history is visible, showing if pills were taken, and if so, when they were taken. Text notifications are sent out when the pill is dispensed, if the pill is still not taken after a specified amount of time, and when a refill is needed.
+                    The app includes a map with each provided pole pinned along with data on the type of asset and the ability to mark a pole as inactive or "out."
+                    <br/>
+                    There is also the option to upload photos of poles which are sent to AEP's pole-identifying API.
                     <br/><br/>
-                    A physical prototype was constructed to show our idea in action. Hardware components include an Arduino, NodeMCU, servo motors, a display, and an ultrasonic sensor. The dispenser communicated with the web app over Wi-Fi.
-                    <br/><br/>
-                    Our project got third place overall at <a href="https://hack.osu.edu/2019/">Hack OHI/O 2019</a>, Ohio State's flagship hackathon with over 800 attendees.
-                    <br/><br/>
-                    Web app development was done with Ruby on Rails and JavaScript. Arduino development was done with C and C++.
+                    The project can be found on <a href="https://github.com/kaevondong/Medusozoa2020">GitHub</a>.
                 </p>
                 <br/>
-                <h5>Teammates:</h5>
-                <p>
-                    <a href="https://www.linkedin.com/in/jivoin/">Andrew Jivoin</a><br/>
-                    <a href="https://www.linkedin.com/in/jonzimm/">Jon Zimmerman</a><br/>
-                    <a href="https://www.linkedin.com/in/alexander-shearer/">Alexander Shearer</a>
-                </p>
-                <br/>
-                <h5>Photos and Videos:</h5>
+                <h5>Photos</h5>
                 <div class="gallery gallery-i">
-                    <img src="photos/smartpilldispenser_complete.jpg" alt="Smart Pill Dispenser Complete">
-                    <div class="desc">Finished Smart Pill Dispenser with physical device with "next medication at" display centered, presentation to the right, web application user interface to the left, and the server running in the back left.</div>
+                    <img src="photos/polerequestmap.png" alt="Pole Request Map">
+                    <div class="desc">Map displaying provided data with the option to mark assets as inactive.</div>
                 </div>
                 <div class="gallery gallery-i">
-                    <img src="photos/smartpilldispenser_back.jpg" alt="Smart Pill Dispenser Under the Hood">
-                    <div class="desc">Back of physical device with Arduino, NodeMCU, ultrasonic sensor, and pill storage system all in view.</div>
-                </div>
-                <div class="gallery gallery-v">
-                    <iframe src="https://www.youtube.com/embed/Dytg9O8Kf9Y" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    <div class="desc">Courtesy of teammate <a href="https://jivoin.com/hack-ohio-2019">Andrew Jivoin</a>.</div>
+                    <img src="photos/polerequestupload.png" alt="Pole Request Upload">
+                    <div class="desc">Upload photos of poles to be sent to the AEP API.</div>
                 </div>
             </div>
         </div>
